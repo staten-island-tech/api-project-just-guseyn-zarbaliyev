@@ -3,15 +3,17 @@ const query = async function () {
   console.log(response);
   const data = await response.json();
   console.log(data.top);
-  
-  data.top.forEach((anime) => {
-  topRated.insertAdjacentHTML("beforeend", `<p class=anime-title>${anime.title}</p> <div class="anime-cover">
-     <img src="${anime.image_url}"
-     class="anime-cover"/>
-    </div`);
-});
 
+  let topTen = data.top.splice(10, 50);
+
+  data.top.forEach((topTen) => {
+    topRated.insertAdjacentHTML(
+      "beforeend",
+      `<p class=anime-title>${topTen.title}</p> <div class="anime-cover">
+     <img src="${topTen.image_url}"
+     class="anime-cover"/>
+    </div`
+    );
+  });
 };
 query();
-
-
