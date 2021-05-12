@@ -1,7 +1,6 @@
 {
   "name": "parcel-template",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "clean": "rm dist/bundle.js",
@@ -12,10 +11,23 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4",
+    "parcel": "^2.0.0-beta.2",
+    "parcel-bundler": "^1.12.5",
     "sass": "^1.26.9"
   },
   "browserslist": [
     "since 2017-06"
-  ]
+  ],
+  "dependencies": {
+    "jikan-node": "^1.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staten-island-tech/api-project-just-guseyn-zarbaliyev.git"
+  },
+  "bugs": {
+    "url": "https://github.com/staten-island-tech/api-project-just-guseyn-zarbaliyev/issues"
+  },
+  "homepage": "https://github.com/staten-island-tech/api-project-just-guseyn-zarbaliyev#readme",
+  "description": ""
 }
