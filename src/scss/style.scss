@@ -1,5 +1,5 @@
 @import "anime-template";
-
+@import "var";
 body {
   box-sizing: border-box;
   padding: 0;
@@ -28,7 +28,7 @@ body {
   font-size: 5.2rem;
 }
 
-.top-rated-all {
+.top-ten {
   padding-top: 15rem;
   margin: 1rem auto 2rem auto;
   text-align: center;

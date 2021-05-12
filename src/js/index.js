@@ -9,10 +9,10 @@ const query = async function () {
   data.top.forEach((topTen) => {
     topRated.insertAdjacentHTML(
       "beforeend",
-      `<p class=anime-title>${topTen.title}</p> <div class="anime-cover">
+      `<div class="placeholder"> <div class=bg> <p class=anime-title>${topTen.title}</p> <div class="anime-cover">
      <img src="${topTen.image_url}"
      class="anime-cover"/>
-    </div`
+    </div></div></div>`
     );
   });
 };
