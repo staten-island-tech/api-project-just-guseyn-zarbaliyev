@@ -1,0 +1,68 @@
+//ACTUAL NAVBAR -------------------------------------------------------
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 4rem;
+  background-color: rgba(0, 0, 0, 0.774);
+  align-items: center;
+  margin-top: -1rem;
+  justify-content: left;
+  list-style-type: none;
+}
+
+//NAVBAR OPTION STYLING -------------------------------------------------------
+
+.nav-options {
+  color: rgb(231, 222, 222);
+  font-size: 1.4rem;
+  font-family: "Raleway";
+  margin: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.nav-logo {
+  margin-top: 1.5rem;
+  transition: all 1s;
+}
+
+.nav-logo:hover {
+  transform: scale(1.2, 1.2);
+}
+
+//DROPDOWN MENU -------------------------------------------------------
+
+.submenu {
+  position: relative;
+  display: inline-block;
+}
+
+.submenu-content {
+  display: none;
+  flex-direction: column;
+  justify-content: left;
+  justify-self: left;
+  font-size: 0.9rem;
+  font-family: "Raleway";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.774);
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  padding: 1rem 1rem;
+  z-index: 99;
+  margin-top: 0.1rem;
+  color: rgb(231, 222, 222);
+  min-width: 10rem;
+}
+
+.submenu:hover .submenu-content {
+  display: block;
+  flex-direction: column;
+  justify-content: left;
+  justify-self: left;
+}
