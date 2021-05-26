@@ -1,14 +1,17 @@
 @import "var";
 
-.anime-cover-parent,
+.anime-cover-parent {
+  display: block;
+  width: 15rem;
+  border-radius: 0.5rem;
+  justify-content: space-evenly;
+}
+
 .anime-cover-child {
-  position: relative;
+  margin-left: 2.5rem;
   width: 15rem;
   border-radius: 0.5rem;
   justify-self: center;
-}
-
-.anime-cover-parent {
 }
 
 .anime-title {

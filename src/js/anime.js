@@ -10,7 +10,7 @@ logo.addEventListener("click", () => {
   freshenUp();
 });
 
-//============================================= INSERTS TOP ANIME OF ALL TIME
+//============================================= INSERTS TOP OF ALL TIME
 
 const topAnimeAll = async function () {
   const response = await fetch("https://api.jikan.moe/v3/top/anime/1/tv");
@@ -41,13 +41,15 @@ topAnime.addEventListener("click", () => {
   topAnimeAll();
 });
 
-//============================================= INSERTS TOP ANIME AIRING
+//============================================= INSERTS TOP AIRING
 
 const topAnimeAir = async function () {
   const response = await fetch("https://api.jikan.moe/v3/top/anime/1/airing");
   const data = await response.json();
 
   let topTen = data.top.splice(15, 50);
+
+  console.log(data);
 
   data.top.forEach((topTen) => {
     result.insertAdjacentHTML(
@@ -72,6 +74,10 @@ airAnimeBtn.addEventListener("click", () => {
   topAnimeAir();
 });
 
-//============================================= INSERTS MY TOP ANIME
+//============================================= INSERTS MY TOP
 
-/* https://api.jikan.moe/v3/search/anime?q=Bleach */
+/* fetch("https://api.jikan.moe/v3/anime/1");
+          .then((response) => response.json())
+          .then((data) => {
+                 console.log(data.title);
+         }; */
