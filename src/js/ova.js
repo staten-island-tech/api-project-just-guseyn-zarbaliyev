@@ -42,36 +42,3 @@ topAnime.addEventListener("click", () => {
 });
 
 //============================================= INSERTS TOP AIRING
-
-const topAnimeAir = async function () {
-  const response = await fetch(
-    "https://api.jikan.moe/v3/top/manga/1/publishing"
-  );
-  const data = await response.json();
-
-  let topTen = data.top.splice(15, 50);
-
-  console.log(data);
-
-  data.top.forEach((topTen) => {
-    result.insertAdjacentHTML(
-      "beforeend",
-      `<div class="anime-container"> 
-      <div class=bg>
-          <p class=anime-title>${topTen.title}</p> 
-          <div class="anime-cover-parent">
-          <img src="${topTen.image_url}" class="anime-cover-child"/>
-          </div>
-          <p class="anime-desc">Score: ${topTen.score}</p>
-          <p class="anime-desc"> Released: ${topTen.start_date}</p>
-    </div>
-    </div>`
-    );
-  });
-};
-
-const airAnimeBtn = document.getElementById("manga-top-air");
-airAnimeBtn.addEventListener("click", () => {
-  freshenUp();
-  topAnimeAir();
-});
