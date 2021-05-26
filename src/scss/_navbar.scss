@@ -29,6 +29,9 @@
 
 .nav-options:hover {
   color: rgb(167, 157, 157);
+  -moz-user-select: -moz-none; //I just googeled for this lol
+  -khtml-user-select: none;
+  -webkit-user-select: none;
 }
 
 .nav-logo {
@@ -59,7 +62,6 @@
   box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
   padding: 0.5rem 1rem;
   z-index: 99;
-  margin-top: 0.1rem;
   color: rgb(231, 222, 222);
   min-width: 10rem;
 }
@@ -71,6 +73,10 @@
   justify-self: left;
 }
 
+.submenu:hover {
+  background-color: rgba(0, 0, 0, 0.513);
+}
+
 .submenu-list {
   text-align: left;
   padding: 0.7rem;
@@ -78,4 +84,19 @@
 
 .submenu-list:hover {
   color: rgb(167, 157, 157);
+}
+
+.submenu-list:active {
+  color: rgb(255, 255, 255);
+  transition: all 0.1s;
+  -moz-user-select: -moz-none; //I just googeled for this lol
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.submenu-4 {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 1rem;
 }
