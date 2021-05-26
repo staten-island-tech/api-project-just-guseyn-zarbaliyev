@@ -24,9 +24,15 @@ body {
   border-style: none;
 }
 
-.top-ten {
-  padding-top: 15rem;
+.title {
+  padding-top: 5rem;
   margin: 1rem auto 2rem auto;
   text-align: center;
   font-size: 3.8rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: bold;
 }

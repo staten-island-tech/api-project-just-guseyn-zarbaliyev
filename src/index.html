@@ -14,14 +14,14 @@
 
   <!-- <img class="background"></img> -->
 
-  <nav class="navbar">
+  <nav class="navbar" id="navbar">
 
-    <img class="nav-options nav-logo" src="../media/pics/logo.png"></img>
+    <img class="nav-options nav-logo" src="../media/pics/logo.png" id="logo"></img>
 
     <nav class="submenu submenu-1">
       <p class="nav-options nav-option-1">Anime</p>
         <div class="submenu-content submenu-content-1">
-          <li onclick="topAnimeAll();" class="submenu-list" id="anime-top-all">Top of All Time</li>
+          <li class="submenu-list" id="anime-top-all">Top of All Time</li>
           <li class="submenu-list" id="anime-top-air">Top Airing</li>
           <li class="submenu-list" id="anime-fav">Personal Favorite</li>
         </div>
@@ -45,16 +45,26 @@
         </div>
     </nav>
 
-    <div class="submenu submenu-4">
-      <input class="search-bar"></input>
-    </div>
+    <form class="submenu submenu-4">
+      <input class="search-bar" placeholder="Looking for that... one anime?  ( ͡° ͜ʖ ͡°)">Hello!</input>
+      <button class="enter-btn">🔎</button>
+    </form>
 
   </nav>
-  
-  <!-- <h1 class="header">Zarbaliyev Anime</h1> -->
 
-  <h2 class="top-ten" id="topRated">Top Ten Anime of All Time</h2>
+  <div class="title" id="">Welcome To Zarbaliyev Anime 
+    <p class="subTitle" id="subTitle">Simply filter with the Nav Bar or Search for an anime...</p>
+  </div>
+
+  <div class=result-container>
+    <div class="result" id="result">
+    </div>
+  </div>
+
   <script src="js/index.js"></script>
+  <script src="js/anime.js"></script>
+  <script src="js/manga.js"></script>
+  <script src="js/ova.js"></script>
 
 </body>
 

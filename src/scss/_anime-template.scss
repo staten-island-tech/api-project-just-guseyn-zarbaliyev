@@ -1,23 +1,51 @@
 @import "var";
 
-.anime-cover {
+.anime-cover-parent,
+.anime-cover-child {
   position: relative;
-  margin: 2rem auto;
+  width: 15rem;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
+
+.anime-cover-parent {
 }
 
 .anime-title {
   font-size: 1.5rem;
-  margin-bottom: -3rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .bg {
   background-color: $anime-bg;
-  width: 30rem;
-  padding-top: 1rem;
+  width: 20rem;
+  height: 33rem;
+  padding: 1rem;
   margin: 2rem;
+  border-radius: 0.5rem;
 }
 
-.placeholder {
+.anime-container {
   display: flex;
   justify-content: center;
+}
+
+.result {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 4rem;
+  grid-row-gap: 8rem;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+}
+
+.anime-desc {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: center;
 }

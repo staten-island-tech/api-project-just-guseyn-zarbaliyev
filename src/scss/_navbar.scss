@@ -43,7 +43,7 @@
   transform: scale(1.2, 1.2);
 }
 
-//DROPDOWN MENU -------------------------------------------------------
+//DROPDOWN MENU(S) -------------------------------------------------------
 
 .submenu {
   position: relative;
@@ -73,7 +73,9 @@
   justify-self: left;
 }
 
-.submenu:hover {
+.submenu-1:hover,
+.submenu-2:hover,
+.submenu-3:hover {
   background-color: rgba(0, 0, 0, 0.513);
 }
 
@@ -99,4 +101,29 @@
   justify-content: flex-end;
   width: 100%;
   padding-right: 1rem;
+}
+
+//SEARCHBAR -------------------------------------------------------
+
+.search-bar {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  width: 25rem;
+  border-bottom: 0.4rem solid rgb(53, 49, 58);
+  border-radius: 0.35rem;
+  outline: none;
+  transition: all 1s ease-in-out;
+}
+
+.search-bar:focus {
+  width: 30rem;
+  font-size: 1.2rem;
+  border-bottom: 0.4rem solid rgb(98, 43, 165);
+}
+
+.enter-btn {
+  width: 2.5rem;
+  height: 2.5rem;
 }
